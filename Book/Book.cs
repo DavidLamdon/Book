@@ -34,7 +34,11 @@ namespace BookApp
         }
         public void Read()
         {
-            currentPage++;
+            if (!IsFinished())
+            {
+                currentPage++;
+            }
+            
         }
         public void Read(int pages)
         {
