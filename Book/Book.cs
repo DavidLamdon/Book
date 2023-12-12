@@ -28,6 +28,10 @@ namespace BookApp
         {
             currentPage = curPage;
         }
+        public void PrintBookDetails()
+        {
+            Console.WriteLine("Book Name " + name + " maxPage " + maxPage + " Current Page " + currentPage );
+        }
         public void Read()
         {
             currentPage++;
